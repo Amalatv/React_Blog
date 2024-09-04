@@ -7,7 +7,7 @@ const Header = () => {
         <b>MY BLOG</b>
       </h1>
       <p>
-        Welcome to the blog of <span className="w3-tag">Stackup</span>
+        Welcome to the blog of <Link style={{ textDecoration: "none" }} to="/Dashboard" className="w3-tag">Stackup</Link>
       </p>
     </header>
   )
