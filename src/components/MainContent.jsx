@@ -23,7 +23,7 @@ const [articleData, setarticledata] = useState([])
 useEffect(() => {
   const fetchBlogs = async () => {
     try{
-      const response = await axios.get("https://react-blog-api-i6ni.onrender.com/getblog")
+      const response = await axios.get("https://react-blog-api-gray.vercel.app/getblog")
       setarticledata(response.data.reverse())
     } catch (error) {
       console.log(error)
