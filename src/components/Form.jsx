@@ -17,7 +17,7 @@ const Form = ({formData, handleChange}) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/blogpost",
+        "https://react-blog-api-gray.vercel.app/blogpost",
         formDataToSubmit
       );
       if (response.status === 200) {
