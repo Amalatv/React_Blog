@@ -10,7 +10,7 @@ const FormMainContent = () => {
   const [formData, setFormData] = useState({
     title: '',
     titledescription: '',
-    imageurl: '',
+    imageUrl: '',  
     description: ''
   });
 
@@ -27,7 +27,7 @@ const FormMainContent = () => {
     setFormData({
       title: '',
       titledescription: '',
-      imageurl: '',
+      imageUrl: '',  
       description: ''
     });
   };
@@ -49,7 +49,7 @@ const FormMainContent = () => {
           <Blogs
                  title={formData.title ||  "Title Heading"}
                  titledescription={formData.titledescription || "Title Description " }
-                 imageUrl={formData.imageurl || "https://www.shutterstock.com/image-photo/ai-tech-businessman-show-virtual-600nw-2253228203.jpg"} alt="Nature" style={{ width: "100%" }}
+                 imageUrl={formData.imageUrl || "https://www.shutterstock.com/image-photo/ai-tech-businessman-show-virtual-600nw-2253228203.jpg"} alt="Nature" style={{ width: "100%" }}
                  date={new Date().toLocaleDateString()}
                  description={formData.description || " Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi noncongue ullam corper.Praesent tincidunt sed tellus ut rutrum. Sedvitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."}
           />
